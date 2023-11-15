@@ -36,8 +36,6 @@ CREATE TABLE comments(
 CREATE TABLE reaction_types(
     id serial primary key,
     type varchar(255),
-    user_id integer references user_accounts(id),
-    post_id integer references posts(id)
 );
 
 CREATE TABLE post_reactions(
